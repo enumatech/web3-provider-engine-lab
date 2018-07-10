@@ -1,0 +1,17 @@
+{
+  "name": "web3-provider-engine-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "overmind s"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "system-sleep": "^1.3.6",
+    "web3": "1.0.0-beta.34",
+    "web3-provider-engine": "14.0.6"
+  }
+}
