@@ -1,2 +1,3 @@
 geth: geth --dev --rpc
-example: node index.js
+example: node ./src/index.js
+watcher: node watcher.js './src'

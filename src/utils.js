@@ -1,5 +1,5 @@
 const Web3 = require('web3')
-const sleep = require('system-sleep');
+const sleep = require('system-sleep')
 
 /**
  * Wait for Geth to start
@@ -11,14 +11,13 @@ function waitForGeth (host) {
 
     while (true) {
       try {
-        const ver = await web3.eth.getProtocolVersion()
-        if (ver) {
+        if (await web3.eth.net.isListening()) {
           resolve(true)
           break
         }
       } catch (err) {}
 
-      sleep(20)
+      sleep(100)
     }
   })
 }

@@ -1,12 +1,9 @@
 {
   "name": "web3-provider-engine-lab",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "overmind s"
+    "start": "OVERMIND_CAN_DIE=example overmind s"
   },
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
